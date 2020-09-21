@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{makeidx}
+\usepackage{minted}
+\usepackage{float}
+\usepackage{graphicx}
+\usemintedstyle{manni}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Alexander Roque Rodrigues}
+\title{Data Structures Journal}
+\begin{document}
+
+% Cover Page Starts
+\begin{center}
+\includegraphics[scale=0.45]{header.png}\\
+\vspace{30px}
+\Huge{Department of Computer Science}\\
+\vspace{5px}
+\Large{2020 - 2021}\\
+\vspace{5px}
+\Large{M.Sc-IT (Part 1)}\\
+
+\vspace{95px}
+\Large{Course: }
+\texttt{Data Structures and Algorithms}\\
+
+\vspace{10px}
+\Large{Course Code: }
+\texttt{MIT11}
+\end{center}
+
+\begin{flushleft}
+\vspace{160px}
+\Large{Name: }\texttt{Alexander Roque Rodrigues}\\
+\Large{Roll Number:} \texttt{202202}
+\end{flushleft}
+\newpage
+% Cover Page Ends
+
+% index table
+\section*{Index}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Serial Number & Date       & Title                                                                                                                                                  & Page Number \\ \hline
+1             & 21-09-2020 & \begin{tabular}[c]{@{}c@{}}Program to keep track of the\\ minimum element in the stack.\end{tabular} & 1           \\ \hline
+2             & 27-10-2020 & \begin{tabular}[c]{@{}c@{}}Program to pop elements and check for the\\ maximum acheivable height in a stack
+\end{tabular}                               & 5           \\ \hline
+3             & 1-11-2020 & \begin{tabular}[c]{@{}c@{}}Program to keep track of the\\ maximum element in the stack.\end{tabular} & 9           \\ \hline
+\end{tabular}
+\end{table}
+% index table
+
+% entry 1
+\newpage
+\section*{1. Minimum Element from Stack.}
+\begin{flushleft}
+Sr.No: \texttt{1}\\
+\vspace{10px}
+Date: \texttt{21-09-2020}\\
+\vspace{10px}
+Problem Statement:\\
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\\
+\vspace{15px}
+Conditions Include:\\
+
+$$0 \leq x \le 2\times10^{20}$$
+
+\vspace{10px}
+Source Code:\\
+\inputminted[tabsize=2,breaklines]{python}{code_1.py}
+
+\vspace{10px}
+Screenshot of Output:\\
+
+\vspace{10px}
+References:\\
+\texttt{Ladd, S., Xin, Y., Yang, J., Liu, P., \& Wu, L. (1998). Java suan fa = HAVA ALGORITHMS. Beijing: Dian Zi Gong ye Chu Ban She.}
+
+\end{flushleft}
+\end{document}
