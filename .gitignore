@@ -274,6 +274,7 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
-
+#python files
+*.py
 # image files
 *.png
