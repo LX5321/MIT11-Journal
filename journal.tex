@@ -6,10 +6,13 @@
 \usepackage[ruled,vlined]{algorithm2e}
 \usepackage{float}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \usemintedstyle{borland}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Alexander Roque Rodrigues}
 \title{Data Structures Journal}
+\usepackage{listings}
+
 \begin{document}
 
 % Cover Page Starts
@@ -59,16 +62,18 @@ Serial Number & Date       & Title                                              
 
 % code table
 \newpage
-\renewcommand\listoflistingscaption{List of source codes}
+\renewcommand\listoflistingscaption{List of Source Codes}
 \listoflistings
 % code table
 
 % algorithms table start
-\newpage
 \renewcommand\listoflistingscaption{List of Algorithms}
 \listofalgorithms
 % algorithms table end
 
+% List of Figures
+\listoffigures
+% List of Figures
 
 % entry 1
 \newpage
@@ -102,14 +107,47 @@ $$0 \leq x \le 2\times10^{20}$$
  }
  \caption{Stack Algorithm}
 \end{algorithm}
+
 \subsection{Source Code}
-\begin{listing}[H]
-\inputminted[tabsize=2,breaklines]{python}{code_1.py}
-\caption{Class definition for the stack operations.}
-\label{Code:1}
-\end{listing}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\normalsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\lstinputlisting[language=Python, caption=Python example]{code_1.py}
+
+
 \subsection{Output}
+\begin{figure}[H]
 \includegraphics[scale=0.55]{1.png}
+\caption{Simple Test Case}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.55]{1.png}
+\caption{Simple Test Case Duplicate}
+\end{figure}
 
 \subsection{References}
 \texttt{Ladd, S., Xin, Y., Yang, J., Liu, P., \& Wu, L. (1998). Java suan fa = JAVA ALGORITHMS. Beijing: Dian Zi Gong ye Chu Ban She.}
