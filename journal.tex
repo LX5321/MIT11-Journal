@@ -1,11 +1,12 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{makeidx}
 \usepackage{minted}
+\usepackage[ruled,vlined]{algorithm2e}
 \usepackage{float}
 \usepackage{graphicx}
-\usemintedstyle{manni}
+\usemintedstyle{borland}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Alexander Roque Rodrigues}
 \title{Data Structures Journal}
@@ -39,7 +40,10 @@
 % Cover Page Ends
 
 % index table
-\section*{Index}
+\begin{center}
+\textbf{\Large{Index}}
+\end{center}
+
 \begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|c|}
@@ -53,31 +57,62 @@ Serial Number & Date       & Title                                              
 \end{table}
 % index table
 
+% code table
+\newpage
+\renewcommand\listoflistingscaption{List of source codes}
+\listoflistings
+% code table
+
+% algorithms table start
+\newpage
+\renewcommand\listoflistingscaption{List of Algorithms}
+\listofalgorithms
+% algorithms table end
+
+
 % entry 1
 \newpage
-\section*{1. Minimum Element from Stack.}
+\section{Minimum Element from Stack.}
 \begin{flushleft}
 Sr.No: \texttt{1}\\
 \vspace{10px}
 Date: \texttt{21-09-2020}\\
-\vspace{10px}
-Problem Statement:\\
+% \vspace{10px}
+\subsection{Problem Statement}
+% Problem Statement:\\
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\\
 \vspace{15px}
 Conditions Include:\\
 
 $$0 \leq x \le 2\times10^{20}$$
 
-\vspace{10px}
-Source Code:\\
+\subsection{Algorithmic Approach}
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwResult{Operations are carried out on the stack and the minimum value at any given time kept track of.}
+ initialization\;
+ \While{While condition}{
+  instructions\;
+  \eIf{condition}{
+   instructions1\;
+   instructions2\;
+   }{
+   instructions3\;
+  }
+ }
+ \caption{Stack Algorithm}
+\end{algorithm}
+\subsection{Source Code}
+\begin{listing}[H]
 \inputminted[tabsize=2,breaklines]{python}{code_1.py}
+\caption{Class definition for the stack operations.}
+\label{Code:1}
+\end{listing}
+\subsection{Output}
+\includegraphics[scale=0.55]{1.png}
 
-\vspace{10px}
-Screenshot of Output:\\
-
-\vspace{10px}
-References:\\
-\texttt{Ladd, S., Xin, Y., Yang, J., Liu, P., \& Wu, L. (1998). Java suan fa = HAVA ALGORITHMS. Beijing: Dian Zi Gong ye Chu Ban She.}
+\subsection{References}
+\texttt{Ladd, S., Xin, Y., Yang, J., Liu, P., \& Wu, L. (1998). Java suan fa = JAVA ALGORITHMS. Beijing: Dian Zi Gong ye Chu Ban She.}
 
 \end{flushleft}
 \end{document}
