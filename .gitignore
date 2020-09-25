@@ -274,7 +274,15 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
 #python files
 *.py
+
 # image files
 *.png
+
+# rst file
+*.rst
+
+# pdf file
+*.pdf
